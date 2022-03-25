@@ -1,0 +1,62 @@
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+//        google()
+//        mavenCentral()
+//    }
+//}
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//}
+rootProject.name = "fosunglibs"
+include ':app'
+// start aar
+include ':libsCenter', ':biz-libs'
+// end aar
+
+// start aar
+include ':libsCenterNew',
+        ':libsCenterNew:alipaysdk',
+        ':libsCenterNew:hooklistenerlib2',
+        ':libsCenterNew:libmvpaar',
+        ':libsCenterNew:libretrofitaar',
+        ':libsCenterNew:opendroid2'
+// end aar
+
+// commonlibs
+//include ':libgeek'
+//include ':libotherlibs'
+//include ':libbase'
+include ':libutils'
+//include ':libagentweb20'
+//include ':libmvp'
+//include ':libretrofit'
+//include ':libglide47'
+//include ':libwebview'
+//include ':libswipebacklayout'
+//include ':librararyforfileprovdider'
+//include ':liblanguage'
+//include ':libupdateapp'
+//include ':libtablayout'
+//include ':libopendroid'
+
+//include ':libzxing'
+//include ':libxuanzeqi'
+//include ':zdkplayer:dkplayer-java'
+//include ':zdkplayer:dkplayer-players:ijkexo'
+//include ':zdkplayer:dkplayer'
+//include ':zdkplayer:dkplayer-ui'
+//include ':zdkplayer:dkplayer-videocache'
+//include ':libyanzheng'
+//include ':libxpopup'
+//include ':libncalendar'
+//include ':libpictureselector'
+//include ':liblinkagerecyclerview'
+//include ':libexpandablerecyclerview'
+//include ':libcitypicker'
+//include ':liblocations'
+//include ':libocr'

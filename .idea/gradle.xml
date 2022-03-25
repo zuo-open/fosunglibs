@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="Android Studio java home" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/biz-libs" />
+            <option value="$PROJECT_DIR$/libsCenter" />
+            <option value="$PROJECT_DIR$/libsCenterNew" />
+            <option value="$PROJECT_DIR$/libsCenterNew/alipaysdk" />
+            <option value="$PROJECT_DIR$/libsCenterNew/hooklistenerlib2" />
+            <option value="$PROJECT_DIR$/libsCenterNew/libmvpaar" />
+            <option value="$PROJECT_DIR$/libsCenterNew/libretrofitaar" />
+            <option value="$PROJECT_DIR$/libsCenterNew/opendroid2" />
+            <option value="$PROJECT_DIR$/libutils" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
