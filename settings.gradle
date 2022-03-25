@@ -43,7 +43,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "fosunglibs"
-include ':app'
+//include ':app'
 // start aar
 include ':libsCenter', ':biz-libs'
 // end aar
@@ -59,8 +59,8 @@ include ':libsCenterNew',
 
 // commonlibs
 //include ':libgeek'
-include ':libotherlibs'
-include ':libbase'
+//include ':libotherlibs'
+//include ':libbase'
 include ':libutils'
 //include ':libagentweb20'
 //include ':libmvp'
