@@ -1,5 +1,5 @@
 apply from: "${rootDir.path}/gradle/base.gradle"
-//apply from: "${rootDir.path}/gradle/publish.gradle"
+apply from: "${rootDir.path}/gradle/publish.gradle"
 def config = rootProject.ext //配置
 def librarys = rootProject.ext.dependencies //
 dependencies {
@@ -39,8 +39,8 @@ dependencies {
     // https://github.com/Meituan-Dianping/walle
     api 'com.meituan.android.walle:library:1.1.7'
     // https://www.pgyer.com/doc/view/android-sdk
-//    api 'com.pgyer:analytics:4.1.16'
-    api 'com.pgyer:analytics:4.2.7'
+////    api 'com.pgyer:analytics:4.1.16'
+//    api 'com.pgyer:analytics:4.2.7'
     // 标题栏框架：https://github.com/getActivity/TitleBar
     api 'com.github.getActivity:TitleBar:8.6'
     // https://github.com/getActivity/ToastUtils 横屏Toast

@@ -6,15 +6,6 @@ ext {
     targetSdkVersion = 32
 //    supportLibVersion = '30.0.0'
 
-    // 灯塔VPN版本号
-    isMIModeVPN = false
-    dengtaversionCode = 10007
-    dengtaversionName = "1.0.0.7"
-
-    // 大屏版本号
-    dapingversionCode = 20000
-    dapingversionName = "2.0.0.0"
-
 //    # for MIM
 //    # is Model Independent Mode
     isMIMode = false
