@@ -2,8 +2,8 @@ apply from: "${rootDir.path}/gradle/base.gradle"
 apply from: "${rootDir.path}/gradle/publish.gradle"
 def librarys = rootProject.ext.dependencies //
 dependencies {
-    api project(':libutils')
-    // https://github.com/square/leakcanary 不支持android 12 隐私协议 exported false
+    implementation project(':libutils')
+    // https://github.com/square/leakcanary 不支持android 12 隐私协议 exported false compileOnly
 //    api librarys.leakcanaryAndroid
     // https://github.com/jd-alexander/LikeButton
 //    api 'com.mikepenz:iconics-core:2.9.1@aar'
