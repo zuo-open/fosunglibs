@@ -1,7 +1,8 @@
 package com.haier.cellarette.baselibrary.assetsfitandroid.fileandroid;
 
 import com.blankj.utilcode.util.Utils;
-import com.geek.libutils.app.BaseApp;
+import com.haier.cellarette.baselibrary.LibotherBaseApp;
+import com.haier.cellarette.baselibrary.LibotherBaseApp;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -42,11 +43,11 @@ public class FileAssetsCopySd {
                     parentDir.mkdirs();
                 }
             } else {//copy to data
-                filesDir = new File(BaseApp.get().getFilesDir(), dest);
+                filesDir = new File(LibotherBaseApp.get().getFilesDir(), dest);
             }
             if (!filesDir.exists()) {
                 filesDir.createNewFile();
-                InputStream open = BaseApp.get().getAssets().open(src);
+                InputStream open = LibotherBaseApp.get().getAssets().open(src);
                 FileOutputStream fileOutputStream = new FileOutputStream(filesDir);
                 byte[] buffer = new byte[4 * 1024];
                 int len = 0;

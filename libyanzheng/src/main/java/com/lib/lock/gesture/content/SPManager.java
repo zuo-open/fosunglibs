@@ -1,7 +1,7 @@
 package com.lib.lock.gesture.content;
 
 
-import com.geek.libutils.app.BaseApp;
+import com.lib.lock.fingerprint.utils.LibyanzhengBaseApp;
 
 /**
  * Description :SharedPreferences
@@ -16,7 +16,7 @@ public class SPManager implements SharedPreferencesKeys {
 
     private SPManager() {
 //        mDk = new DataKeeper(ContextUtils.getContext(), spFileName);
-        mDk = new DataKeeper(BaseApp.get().getApplicationContext(), spFileName);
+        mDk = new DataKeeper(LibyanzhengBaseApp.get().getApplicationContext(), spFileName);
     }
 
     public static SPManager getInstance() {

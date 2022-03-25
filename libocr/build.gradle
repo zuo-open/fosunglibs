@@ -3,8 +3,10 @@ apply from: "${rootDir.path}/gradle/publish.gradle"
 def librarys = rootProject.ext.dependencies //依赖
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    api project(':libutils')
-    api librarys.zxing
+    implementation librarys.blankj
+    implementation librarys.glide47
+    implementation librarys.zxing
+    implementation 'com.github.SherlockGougou:BigImageViewPager:androidx-6.2.1'
     api 'org.tensorflow:tensorflow-lite:1.14.0'
 //    // https://github.com/SherlockGougou/BigImageViewPager
 //    api 'com.github.SherlockGougou:BigImageViewPager:androidx-6.1.6'

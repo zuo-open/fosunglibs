@@ -9,9 +9,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.geek.libutils.app.BaseApp;
-import com.geek.libutils.app.MyLogUtil;
-
+import com.lib.lock.fingerprint.utils.LibyanzhengBaseApp;
 
 @TargetApi(Build.VERSION_CODES.M)
 public class FingerprintCore {
@@ -83,9 +81,9 @@ public class FingerprintCore {
             try {
                 mFingerprintManager.authenticate(null, mCancellationSignal, 0, mAuthCallback, null);
                 notifyStartAuthenticateResult(true, "");
-                MyLogUtil.e("slbyanzheng", e.toString() + "");
+                Log.e("slbyanzheng", e.toString() + "");
             } catch (SecurityException e2) {
-                MyLogUtil.e("slbyanzheng", e2.toString() + "");
+                Log.e("slbyanzheng", e2.toString() + "");
                 notifyStartAuthenticateResult(false, Log.getStackTraceString(e2));
 
             } catch (Throwable throwable) {
@@ -281,7 +279,7 @@ public class FingerprintCore {
 
     public static class LazyHolder {
         //        public static FingerprintCore INSTANCE = new FingerprintCore(FingerContext.getContext());
-        public static FingerprintCore INSTANCE = new FingerprintCore(BaseApp.get().getApplicationContext());
+        public static FingerprintCore INSTANCE = new FingerprintCore(LibyanzhengBaseApp.get().getApplicationContext());
     }
 
 

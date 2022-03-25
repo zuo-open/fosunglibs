@@ -21,8 +21,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
 import com.bumptech.glide.Glide;
-import com.geek.libocr.CardIDBean;
-import com.geek.libocr.R;
 import com.geek.libocr.base.Callback;
 import com.geek.libocr.base.IViewFinder;
 import com.geek.libocr.base.Result;

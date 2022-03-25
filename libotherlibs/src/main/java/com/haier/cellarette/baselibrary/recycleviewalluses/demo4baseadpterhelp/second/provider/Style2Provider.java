@@ -31,9 +31,9 @@ public class Style2Provider extends BaseItemProvider<BaseRecActDemo42Bean, BaseV
 //    @Override
 //    public void onClick(BaseViewHolder helper, BaseRecActDemo42Bean data, int position) {
 //        if (helper.getItemId() == helper.getView(R.id.tv).getId()) {
-//            Toasty.normal(BaseApp.get(), position + "item click=" + data.getmBean().getUserName()).show();
+//            Toasty.normal(LibotherBaseApp.get(), position + "item click=" + data.getmBean().getUserName()).show();
 //        } else if (helper.getItemId() == helper.getView(R.id.tv1).getId()) {
-//            Toasty.normal(BaseApp.get(), position + "item click=" + data.getmBean().getText()).show();
+//            Toasty.normal(LibotherBaseApp.get(), position + "item click=" + data.getmBean().getText()).show();
 //        } else {
 //        }
 //

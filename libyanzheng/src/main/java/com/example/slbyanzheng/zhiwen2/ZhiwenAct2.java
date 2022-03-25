@@ -2,6 +2,7 @@ package com.example.slbyanzheng.zhiwen2;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +13,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.slbyanzheng.R;
-import com.geek.libutils.app.MyLogUtil;
 import com.lib.aliocr.view.OcrLaunchFragment;
 import com.lib.lock.fingerprint.core.FingerprintCore;
 import com.lib.lock.fingerprint.core.MyListener;
@@ -50,7 +50,7 @@ public class ZhiwenAct2 extends AppCompatActivity implements View.OnClickListene
         FingerprintUtil.startFingerprintRecognition(ZhiwenAct2.this, new MyListener() {
             @Override
             public void onAuthenticateSuccess() {
-                MyLogUtil.e("FingerprintUtil", "onAuthenticateSuccess");
+                Log.e("FingerprintUtil", "onAuthenticateSuccess");
 //                finish();
 //                getWindow().getDecorView().postDelayed(new Runnable() {
 //                    @Override
@@ -64,19 +64,19 @@ public class ZhiwenAct2 extends AppCompatActivity implements View.OnClickListene
             @Override
             public void onAuthenticateFailed(int helpId, String errString) {
                 String aaaa = "";
-                MyLogUtil.e("FingerprintUtil", errString + "");
+                Log.e("FingerprintUtil", errString + "");
             }
 
             @Override
             public void onAuthenticateError(int errMsgId) {
                 String aaaa = "";
-                MyLogUtil.e("FingerprintUtil", errMsgId + "");
+                Log.e("FingerprintUtil", errMsgId + "");
             }
 
             @Override
             public void onStartAuthenticateResult(boolean isSuccess) {
                 String aaaa = "";
-                MyLogUtil.e("FingerprintUtil", isSuccess + "");
+                Log.e("FingerprintUtil", isSuccess + "");
             }
         });
     }

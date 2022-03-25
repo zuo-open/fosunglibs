@@ -9,7 +9,7 @@ import android.util.Log;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 
-import com.geek.libutils.app.BaseApp;
+import com.haier.cellarette.baselibrary.LibotherBaseApp;
 import com.haier.cellarette.baselibrary.R;
 import com.haier.cellarette.baselibrary.switchbutton.SwitchButton;
 
@@ -40,7 +40,7 @@ public class RingActivityControl {
     public RingActivityControl(Context context, Handler handler) {
         mContext = context;
         settingsContentObserver = new SettingsContentObserver(mContext, handler);
-//        audioManager = (AudioManager) BaseApp.get().getSystemService(Context.AUDIO_SERVICE);
+//        audioManager = (AudioManager) LibotherBaseApp.get().getSystemService(Context.AUDIO_SERVICE);
     }
 
     /**
@@ -404,7 +404,7 @@ public class RingActivityControl {
      * @return 1：静音  0：非静音  -1：第一次检测静音状态
      */
     private int ring_get_sp_mute_state() {
-        return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDTAG, -1);
+        return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDTAG, -1);
     }
 
     /**
@@ -413,7 +413,7 @@ public class RingActivityControl {
      * @param i 1：静音  0：非静音
      */
     private void ring_put_sp_mute_state(int i) {
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDTAG, i);
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDTAG, i);
     }
 
     /**
@@ -424,19 +424,19 @@ public class RingActivityControl {
      */
     private void ring_put_sp_mute_vol(String type, int i) {
         if (type.equals(SOUND_ALARM)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDALARM, i);
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDALARM, i);
         } else if (type.equals(SOUND_MUSIC)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDMUSIC, i);
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDMUSIC, i);
         } else if (type.equals(SOUND_DTMF)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDDTMF, i);
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDDTMF, i);
         } else if (type.equals(SOUND_NOTIFICATION)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDNOTICE, i);
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDNOTICE, i);
         } else if (type.equals(SOUND_RING)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDRING, i);
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDRING, i);
         } else if (type.equals(SOUND_VOICE_CALL)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDVOICECALL, i);
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDVOICECALL, i);
         } else if (type.equals(SOUND_SYSTEM)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.QUIETSOUNDSYSTEM, i);
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.QUIETSOUNDSYSTEM, i);
         }
     }
 
@@ -448,19 +448,19 @@ public class RingActivityControl {
      */
     private int ring_get_sp_mute_vol(String type) {
         if (type.equals(SOUND_ALARM)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDALARM, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDALARM, -1);
         } else if (type.equals(SOUND_MUSIC)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDMUSIC, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDMUSIC, -1);
         } else if (type.equals(SOUND_DTMF)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDDTMF, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDDTMF, -1);
         } else if (type.equals(SOUND_NOTIFICATION)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDNOTICE, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDNOTICE, -1);
         } else if (type.equals(SOUND_RING)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDRING, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDRING, -1);
         } else if (type.equals(SOUND_VOICE_CALL)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDVOICECALL, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDVOICECALL, -1);
         } else if (type.equals(SOUND_SYSTEM)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDSYSTEM, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDSYSTEM, -1);
         }
         return 0;
     }
@@ -472,19 +472,19 @@ public class RingActivityControl {
      */
     private void ring_put_sp_current_vol(String type) {
         if (type.equals(SOUND_ALARM)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDALARM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_ALARM));
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDALARM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_ALARM));
         } else if (type.equals(SOUND_MUSIC)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDMUSIC, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_MUSIC));
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDMUSIC, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_MUSIC));
         } else if (type.equals(SOUND_DTMF)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDDTMF, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_DTMF));
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDDTMF, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_DTMF));
         } else if (type.equals(SOUND_NOTIFICATION)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDNOTICE, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_NOTIFICATION));
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDNOTICE, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_NOTIFICATION));
         } else if (type.equals(SOUND_RING)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDRING, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_RING));
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDRING, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_RING));
         } else if (type.equals(SOUND_VOICE_CALL)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDVOICECALL, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_VOICE_CALL));
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDVOICECALL, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_VOICE_CALL));
         } else if (type.equals(SOUND_SYSTEM)) {
-            RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDSYSTEM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_SYSTEM));
+            RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDSYSTEM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_SYSTEM));
         }
     }
 
@@ -492,13 +492,13 @@ public class RingActivityControl {
      * 记录所有类型当前音量到当前声音SP
      */
     private void ring_put_sp_all_current_vol() {
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDALARM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_ALARM));
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDMUSIC, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_MUSIC));
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDDTMF, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_DTMF));
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDNOTICE, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_NOTIFICATION));
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDRING, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_RING));
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDVOICECALL, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_VOICE_CALL));
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDSYSTEM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_SYSTEM));
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDALARM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_ALARM));
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDMUSIC, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_MUSIC));
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDDTMF, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_DTMF));
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDNOTICE, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_NOTIFICATION));
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDRING, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_RING));
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDVOICECALL, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_VOICE_CALL));
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDSYSTEM, RingUtil.getCurrentVol(audioManager, RingUtil.SOUND_SYSTEM));
     }
 
     /**
@@ -509,19 +509,19 @@ public class RingActivityControl {
      */
     private int ring_get_sp_current_vol(String type) {
         if (type.equals(SOUND_ALARM)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDALARM, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDALARM, -1);
         } else if (type.equals(SOUND_MUSIC)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDMUSIC, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDMUSIC, -1);
         } else if (type.equals(SOUND_DTMF)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDDTMF, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDDTMF, -1);
         } else if (type.equals(SOUND_NOTIFICATION)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDNOTICE, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDNOTICE, -1);
         } else if (type.equals(SOUND_RING)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDRING, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDRING, -1);
         } else if (type.equals(SOUND_VOICE_CALL)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDVOICECALL, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDVOICECALL, -1);
         } else if (type.equals(SOUND_SYSTEM)) {
-            return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDSYSTEM, -1);
+            return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDSYSTEM, -1);
         }
         return 0;
     }
@@ -531,21 +531,21 @@ public class RingActivityControl {
      */
     private void ring_print_sp_all_vars() {
         Log.e(TAG, "------------------ ring_print_sp_all_vars ------------------ ");
-        Log.e(TAG, RingConstants.CURRENTSOUNDALARM + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDALARM, -1));
-        Log.e(TAG, RingConstants.CURRENTSOUNDMUSIC + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDMUSIC, -1));
-        Log.e(TAG, RingConstants.CURRENTSOUNDDTMF + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDDTMF, -1));
-        Log.e(TAG, RingConstants.CURRENTSOUNDNOTICE + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDNOTICE, -1));
-        Log.e(TAG, RingConstants.CURRENTSOUNDRING + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDRING, -1));
-        Log.e(TAG, RingConstants.CURRENTSOUNDVOICECALL + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDVOICECALL, -1));
-        Log.e(TAG, RingConstants.CURRENTSOUNDSYSTEM + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDSYSTEM, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDTAG + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDTAG, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDALARM + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDALARM, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDMUSIC + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDMUSIC, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDDTMF + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDDTMF, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDNOTICE + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDNOTICE, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDRING + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDRING, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDVOICECALL + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDVOICECALL, -1));
-        Log.e(TAG, RingConstants.QUIETSOUNDSYSTEM + ": " + RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.QUIETSOUNDSYSTEM, -1));
+        Log.e(TAG, RingConstants.CURRENTSOUNDALARM + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDALARM, -1));
+        Log.e(TAG, RingConstants.CURRENTSOUNDMUSIC + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDMUSIC, -1));
+        Log.e(TAG, RingConstants.CURRENTSOUNDDTMF + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDDTMF, -1));
+        Log.e(TAG, RingConstants.CURRENTSOUNDNOTICE + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDNOTICE, -1));
+        Log.e(TAG, RingConstants.CURRENTSOUNDRING + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDRING, -1));
+        Log.e(TAG, RingConstants.CURRENTSOUNDVOICECALL + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDVOICECALL, -1));
+        Log.e(TAG, RingConstants.CURRENTSOUNDSYSTEM + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDSYSTEM, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDTAG + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDTAG, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDALARM + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDALARM, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDMUSIC + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDMUSIC, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDDTMF + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDDTMF, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDNOTICE + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDNOTICE, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDRING + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDRING, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDVOICECALL + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDVOICECALL, -1));
+        Log.e(TAG, RingConstants.QUIETSOUNDSYSTEM + ": " + RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.QUIETSOUNDSYSTEM, -1));
     }
 
     /**
@@ -554,14 +554,14 @@ public class RingActivityControl {
      * @param i
      */
     private void ring_put_sp_sound_effect(int i) {
-        RingSpUtils.getInstance(BaseApp.get()).put(RingConstants.CURRENTSOUNDEFFECT, i);
+        RingSpUtils.getInstance(LibotherBaseApp.get()).put(RingConstants.CURRENTSOUNDEFFECT, i);
     }
 
     /**
      * 获取播放音效
      */
     private int ring_get_sp_sound_effect() {
-        return (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDEFFECT, 1);
+        return (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDEFFECT, 1);
     }
 
     /**

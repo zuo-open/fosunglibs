@@ -14,7 +14,7 @@
 //
 //
 //import com.haier.cellarette.baselibrary.R;
-//import com.geek.libutils.app.BaseApp;
+//import com.haier.cellarette.baselibrary.LibotherBaseApp;
 //import com.haier.cellarette.baselibrary.toasts2.Toasty;
 //
 //public class JpushyanzhengDemoUtil {
@@ -27,7 +27,7 @@
 //        }
 //        if (!TextUtils.isDigitsOnly(phone)) {
 //            view.setText("手机号格式错误，仅支持纯数字");
-//            Toasty.normal(BaseApp.get(), "手机号格式错误，仅支持纯数字").show();
+//            Toasty.normal(LibotherBaseApp.get(), "手机号格式错误，仅支持纯数字").show();
 //
 //            return false;
 //        }
@@ -79,7 +79,7 @@
 //                int remainTime = (int) (millisUntilFinished / 1000L);
 //                btnHqyzm.setEnabled(false);
 ////                btnHqyzm.setBackgroundResource(R.drawable.btncomm_enpressed);
-//                btnHqyzm.setText(BaseApp.get().getResources().getString(R.string.string_tips, remainTime));
+//                btnHqyzm.setText(LibotherBaseApp.get().getResources().getString(R.string.string_tips, remainTime));
 //
 //            }
 //

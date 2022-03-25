@@ -6,7 +6,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.geek.libutils.app.BaseApp;
+import com.haier.cellarette.baselibrary.LibotherBaseApp;
 
 import java.lang.reflect.Field;
 
@@ -23,7 +23,7 @@ public class ToastUtilOld {
         if (toastText == null) { return;}
 
         if (toast == null) {
-            toast = Toast.makeText(BaseApp.get(), "", Toast.LENGTH_SHORT);
+            toast = Toast.makeText(LibotherBaseApp.get(), "", Toast.LENGTH_SHORT);
             updToastTextSize(toast);
         }
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -44,11 +44,11 @@ public class ToastUtilOld {
     }
 
     public static void showToastShort(int res) {
-        showToastShort(BaseApp.get().getString(res));
+        showToastShort(LibotherBaseApp.get().getString(res));
     }
 
     public static void showToastLong(int res) {
-        showToastLong(BaseApp.get().getString(res));
+        showToastLong(LibotherBaseApp.get().getString(res));
     }
 
     private static void updToastTextSize(Toast toast) {

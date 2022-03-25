@@ -8,8 +8,6 @@ import android.security.keystore.KeyPermanentlyInvalidatedException;
 import android.security.keystore.KeyProperties;
 import android.util.Log;
 
-import com.geek.libutils.app.MyLogUtil;
-
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -113,7 +111,7 @@ public class CryptoObjectCreator {
             mKeyStore.load(null);
             SecretKey key = (SecretKey) mKeyStore.getKey(KEY_NAME, null);
             mCipher.init(Cipher.ENCRYPT_MODE, key);
-            MyLogUtil.e("zhiwenkey",mCipher.getAlgorithm().toString());
+            Log.e("zhiwenkey",mCipher.getAlgorithm().toString());
             return true;
         } catch (KeyPermanentlyInvalidatedException e) {
             Log.e("", " Failed to initCipher, e:");

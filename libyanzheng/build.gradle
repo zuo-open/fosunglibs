@@ -11,19 +11,19 @@ android {
     }
 }
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api project(':libutils')
-    api librarys.retrofit
-    api librarys.retrofitconverters
-    api librarys.retrofitgconvertergson
-    api librarys.retrofitgconverterscalars
-    api librarys.okhttpVersion
-    api librarys.okioVersion
-    api librarys.okhttploggerinter
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.blankj
+    implementation librarys.retrofit
+    implementation librarys.retrofitconverters
+    implementation librarys.retrofitgconvertergson
+    implementation librarys.retrofitgconverterscalars
+    implementation librarys.okhttpVersion
+    implementation librarys.okioVersion
+    implementation librarys.okhttploggerinter
     //
-    api librarys.rxJava2
-    api librarys.rxandroid2
-    api librarys.adapterrxjava2
+    implementation librarys.rxJava2
+    implementation librarys.rxandroid2
+    implementation librarys.adapterrxjava2
 
 //    implementation project(path: ':libsCenterNew:opendroid2')
 //    implementation files('../../../otherlibs/alipaySdk-20180601.jar')

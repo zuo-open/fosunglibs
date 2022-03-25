@@ -9,7 +9,7 @@ import android.os.Handler;
 import android.util.Log;
 
 import com.blankj.utilcode.util.SPUtils;
-import com.geek.libutils.app.BaseApp;
+import com.haier.cellarette.baselibrary.LibotherBaseApp;
 import com.haier.cellarette.baselibrary.R;
 
 import java.io.IOException;
@@ -58,17 +58,17 @@ public class RingUtil {
         new Handler().post(new Runnable() {
             @Override
             public void run() {
-                int whichRadio = (int) RingSpUtils.getInstance(BaseApp.get()).get(RingConstants.CURRENTSOUNDEFFECT, 3);
+                int whichRadio = (int) RingSpUtils.getInstance(LibotherBaseApp.get()).get(RingConstants.CURRENTSOUNDEFFECT, 3);
                 Uri uri = null;
                 switch (whichRadio) {
                     case 1:
-                        uri = Uri.parse("android.resource://" + BaseApp.get().getPackageName() + "/" + R.raw.ring1);
+                        uri = Uri.parse("android.resource://" + LibotherBaseApp.get().getPackageName() + "/" + R.raw.ring1);
                         break;
                     case 2:
-                        uri = Uri.parse("android.resource://" + BaseApp.get().getPackageName() + "/" + R.raw.ring2);
+                        uri = Uri.parse("android.resource://" + LibotherBaseApp.get().getPackageName() + "/" + R.raw.ring2);
                         break;
                     case 3:
-                        uri = Uri.parse("android.resource://" + BaseApp.get().getPackageName() + "/" + R.raw.ring3);
+                        uri = Uri.parse("android.resource://" + LibotherBaseApp.get().getPackageName() + "/" + R.raw.ring3);
                         break;
                     default:
                         break;
