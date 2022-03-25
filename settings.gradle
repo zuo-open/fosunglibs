@@ -59,7 +59,7 @@ include ':libsCenterNew',
 
 // commonlibs
 //include ':libgeek'
-//include ':libotherlibs'
+include ':libotherlibs'
 //include ':libbase'
 include ':libutils'
 //include ':libagentweb20'
