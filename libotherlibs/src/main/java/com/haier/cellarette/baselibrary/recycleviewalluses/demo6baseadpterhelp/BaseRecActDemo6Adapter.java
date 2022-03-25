@@ -46,7 +46,7 @@ public class BaseRecActDemo6Adapter extends BaseQuickAdapter<BaseRecActDemo6Bean
             return super.getItemView(layoutResId, parent);
         }
         View view = binding.getRoot();
-        view.setTag(R.id.BaseQuickAdapter_databinding_support, binding);
+        view.setTag(com.chad.library.R.id.BaseQuickAdapter_databinding_support, binding);
         return view;
     }
 
@@ -57,7 +57,7 @@ public class BaseRecActDemo6Adapter extends BaseQuickAdapter<BaseRecActDemo6Bean
         }
 
         public ViewDataBinding getBinding() {
-            return (ViewDataBinding) itemView.getTag(R.id.BaseQuickAdapter_databinding_support);
+            return (ViewDataBinding) itemView.getTag(com.chad.library.R.id.BaseQuickAdapter_databinding_support);
         }
     }
 }

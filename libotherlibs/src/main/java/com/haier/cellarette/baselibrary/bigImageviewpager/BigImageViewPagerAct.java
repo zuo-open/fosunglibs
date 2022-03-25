@@ -322,20 +322,20 @@ public class BigImageViewPagerAct extends AppCompatActivity {
                         // 是否显示关闭页面按钮，在页面左下角。默认不显示
                         .setShowCloseButton(showCloseButton)
                         // 设置关闭按钮图片资源，可不填，默认为库中自带：R.drawable.ic_action_close
-                        .setCloseIconResId(R.drawable.ic_action_close)
+                        .setCloseIconResId(cc.shinichi.library.R.drawable.ic_action_close)
 
                         // 是否显示下载按钮，在页面右下角。默认显示
                         .setShowDownButton(showDownButton)
                         // 设置下载按钮图片资源，可不填，默认为库中自带：R.drawable.icon_download_new
-                        .setDownIconResId(R.drawable.icon_download_new)
+                        .setDownIconResId(cc.shinichi.library.R.drawable.icon_download_new)
 
                         // 设置是否显示顶部的指示器（1/9）默认显示
                         .setShowIndicator(showIndicator)
                         // 设置顶部指示器背景shape，默认自带灰色圆角shape
-                        .setIndicatorShapeResId(R.drawable.shape_indicator_bg)
+                        .setIndicatorShapeResId(cc.shinichi.library.R.drawable.shape_indicator_bg)
 
                         // 设置失败时的占位图，默认为库中自带R.drawable.load_failed，设置为 0 时不显示
-                        .setErrorPlaceHolder(R.drawable.load_failed)
+                        .setErrorPlaceHolder(cc.shinichi.library.R.drawable.load_failed)
 
                         // 点击回调
                         .setBigImageClickListener(new OnBigImageClickListener() {
@@ -395,8 +395,8 @@ public class BigImageViewPagerAct extends AppCompatActivity {
                                 Log.d(TAG, "progress: " + progress);
 
                                 // 需要找到进度控件并设置百分比，回调中的parentView即传入的布局的根View，可通过parentView找到控件：
-                                ProgressBar progressBar = parentView.findViewById(R.id.sh_progress_view);
-                                TextView textView = parentView.findViewById(R.id.sh_progress_text);
+                                ProgressBar progressBar = parentView.findViewById(cc.shinichi.library.R.id.sh_progress_view);
+                                TextView textView = parentView.findViewById(cc.shinichi.library.R.id.sh_progress_text);
                                 progressBar.setProgress(progress);
                                 String progressText = progress + "%";
                                 textView.setText(progressText);

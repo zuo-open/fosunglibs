@@ -97,7 +97,7 @@ public class NetModel {
     public static void showWifiDlg(final Context context) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context.getApplicationContext());
         if (mWifiDialog == null) {
-            mWifiDialog = builder.setIcon(R.drawable.icon_download_new)         //
+            mWifiDialog = builder.setIcon(R.drawable.icon_dh1)         //
                     .setTitle("wifi设置")            //
                     .setMessage("当前无网络").setPositiveButton("设置", new DialogInterface
                             .OnClickListener() {
@@ -138,7 +138,7 @@ public class NetModel {
     public static void showNoNetWorkDlg(final Context context) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context.getApplicationContext());
         if (mAlertDialog == null) {
-            mAlertDialog = builder.setIcon(R.drawable.icon_download_new)         //
+            mAlertDialog = builder.setIcon(R.drawable.icon_dh1)         //
                     .setTitle("网络设置")            //
                     .setMessage("当前无网络").setPositiveButton("设置", new DialogInterface
                             .OnClickListener() {

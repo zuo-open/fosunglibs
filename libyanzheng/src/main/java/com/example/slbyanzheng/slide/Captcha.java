@@ -23,6 +23,9 @@ import androidx.annotation.Nullable;
 
 import com.example.slbyanzheng.R;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
 /**
  * Created by luozhanming on 2018/1/17.
  */
@@ -61,6 +64,7 @@ public class Captcha extends LinearLayout {
     public static final int MODE_NONBAR = 2;
 
     @IntDef(value = {MODE_BAR, MODE_NONBAR})
+    @Retention(RetentionPolicy.SOURCE)
     public @interface Mode {
     }
 

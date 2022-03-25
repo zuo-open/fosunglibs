@@ -74,7 +74,7 @@ public class RxMagicSampleFragment extends Fragment {
                     //TODO
                 },
                 (secondaryHolder, item) -> {
-                    secondaryHolder.getView(R.id.level_2_item).setOnClickListener(v -> {
+                    secondaryHolder.getView(com.kunminx.linkage.R.id.level_2_item).setOnClickListener(v -> {
                         Snackbar.make(v, item.info.getTitle(), Snackbar.LENGTH_SHORT).show();
                     });
                 },

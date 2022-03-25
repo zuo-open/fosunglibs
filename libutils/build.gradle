@@ -68,8 +68,6 @@ dependencies {
     api 'pub.devrel:easypermissions:3.0.0'
     // https://github.com/SalomonBrys/ANR-WatchDog
     api 'com.github.anrwatchdog:anrwatchdog:1.4.0'
-    // https://github.com/SherlockGougou/BigImageViewPager
-    api 'com.github.SherlockGougou:BigImageViewPager:androidx-6.2.1'
     // https://github.com/drakeet/MultiType
     api 'me.drakeet.multitype:multitype:3.4.4'
     // https://github.com/jaredrummler/MaterialSpinner
@@ -83,7 +81,7 @@ dependencies {
     // https://github.com/nanchen2251/BankCardUtils
     api 'com.github.nanchen2251:BankCardUtils:1.0.2'
 //    // https://github.com/SherlockGougou/BigImageViewPager
-//    api 'com.github.SherlockGougou:BigImageViewPager:androidx-6.2.1'
+    api 'com.github.SherlockGougou:BigImageViewPager:androidx-6.1.6'
     // https://github.com/MZCretin/ExpandableTextView
     api 'com.github.MZCretin:ExpandableTextView:v1.6.1-x'
     // https://github.com/princekin-f/EasyFloat

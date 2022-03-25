@@ -40,7 +40,7 @@ public class PhotoFragmentActivity extends AppCompatActivity {
                     PictureCacheManager.deleteCacheDirFile(PhotoFragmentActivity.this, PictureMimeType.ofImage());
                 } else {
                     Toast.makeText(PhotoFragmentActivity.this,
-                            getString(R.string.picture_jurisdiction), Toast.LENGTH_SHORT).show();
+                            getString(com.luck.picture.lib.R.string.picture_jurisdiction), Toast.LENGTH_SHORT).show();
                 }
             }
         }

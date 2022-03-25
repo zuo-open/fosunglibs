@@ -94,7 +94,7 @@ public class PlayerActivityDk extends BaseActivityDk<VideoView<AbstractPlayer>> 
             //根据屏幕方向自动进入/退出全屏
             controller.setEnableOrientation(true);
             PrepareView prepareView = new PrepareView(this);//准备播放界面
-            ImageView thumb = prepareView.findViewById(R.id.thumb);//封面图
+            ImageView thumb = prepareView.findViewById(xyz.doikki.videocontroller.R.id.thumb);//封面图
             Glide.with(this).load(THUMB).into(thumb);
             controller.addControlComponent(prepareView);
             controller.addControlComponent(new CompleteView(this));//自动完成播放界面

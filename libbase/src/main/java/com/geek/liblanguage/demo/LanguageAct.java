@@ -133,7 +133,7 @@ public final class LanguageAct extends LanguageBaseActivity
 
     @Override
     public void onTitleClick(View view) {
-        ToastUtils.show(R.string.app_name);
+        ToastUtils.show(R.string.app_namelibbase);
     }
 
     @Override

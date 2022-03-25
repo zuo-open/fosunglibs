@@ -52,6 +52,7 @@ android {
 //    }
 //    viewBinding.enabled = true
     buildFeatures {
+        //noinspection DataBindingWithoutKapt
         dataBinding = true
         // for view binding :
         // viewBinding = true

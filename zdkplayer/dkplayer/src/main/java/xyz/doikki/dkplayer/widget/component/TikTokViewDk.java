@@ -116,7 +116,7 @@ public class TikTokViewDk extends FrameLayout implements IControlComponent {
                 break;
             case VideoView.STATE_ERROR:
                 L.e("STATE_ERROR " + hashCode());
-                Toast.makeText(getContext(), R.string.dkplayer_error_message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), xyz.doikki.videocontroller.R.string.dkplayer_error_message, Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;

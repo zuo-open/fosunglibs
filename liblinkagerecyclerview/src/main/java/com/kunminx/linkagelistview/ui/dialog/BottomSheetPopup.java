@@ -51,7 +51,7 @@ public class BottomSheetPopup extends BottomPopupView {
                     //TODO
                 },
                 (secondaryHolder, item) -> {
-                    secondaryHolder.getView(R.id.level_2_item).setOnClickListener(v -> {
+                    secondaryHolder.getView(com.kunminx.linkage.R.id.level_2_item).setOnClickListener(v -> {
                         if (isShow()) {
                             dismiss();
                         }

@@ -184,7 +184,7 @@ public class PicassoEngine implements ImageEngine {
                     .load(Uri.parse(url))
                     .resize(180, 180)
                     .centerCrop()
-                    .placeholder(R.drawable.picture_image_placeholder)
+                    .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
                     .into(imageView);
         } else {
             if (PictureMimeType.isUrlHasVideo(url)) {
@@ -194,14 +194,14 @@ public class PicassoEngine implements ImageEngine {
                 picasso.load(videoRequestHandler.SCHEME_VIDEO + ":" + url)
                         .resize(180, 180)
                         .centerCrop()
-                        .placeholder(R.drawable.picture_image_placeholder)
+                        .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
                         .into(imageView);
             } else {
                 Picasso.get()
                         .load(new File(url))
                         .resize(180, 180)
                         .centerCrop()
-                        .placeholder(R.drawable.picture_image_placeholder)
+                        .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
                         .into(imageView);
             }
         }
@@ -244,7 +244,7 @@ public class PicassoEngine implements ImageEngine {
                     .load(Uri.parse(url))
                     .resize(200, 200)
                     .centerCrop()
-                    .placeholder(R.drawable.picture_image_placeholder)
+                    .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
                     .into(imageView);
         } else {
             if (PictureMimeType.isUrlHasVideo(url)) {
@@ -254,14 +254,14 @@ public class PicassoEngine implements ImageEngine {
                 picasso.load(videoRequestHandler.SCHEME_VIDEO + ":" + url)
                         .resize(200, 200)
                         .centerCrop()
-                        .placeholder(R.drawable.picture_image_placeholder)
+                        .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
                         .into(imageView);
             } else {
                 Picasso.get()
                         .load(new File(url))
                         .resize(200, 200)
                         .centerCrop()
-                        .placeholder(R.drawable.picture_image_placeholder)
+                        .placeholder(com.luck.picture.lib.R.drawable.picture_image_placeholder)
                         .into(imageView);
             }
         }

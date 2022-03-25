@@ -77,7 +77,7 @@ public class VideoRecyclerViewAdapterDk extends RecyclerView.Adapter<VideoRecycl
             mPlayerContainer = itemView.findViewById(R.id.player_container);
             mTitle = itemView.findViewById(R.id.tv_title);
             mPrepareView = itemView.findViewById(R.id.prepare_view);
-            mThumb = mPrepareView.findViewById(R.id.thumb);
+            mThumb = mPrepareView.findViewById(xyz.doikki.videocontroller.R.id.thumb);
             if (mOnItemChildClickListener != null) {
                 mPlayerContainer.setOnClickListener(this);
             }

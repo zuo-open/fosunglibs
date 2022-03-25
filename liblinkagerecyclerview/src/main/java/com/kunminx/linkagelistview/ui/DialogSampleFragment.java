@@ -87,7 +87,7 @@ public class DialogSampleFragment extends Fragment {
                     //TODO
                 },
                 (secondaryHolder, item) -> {
-                    secondaryHolder.getView(R.id.level_2_item).setOnClickListener(v -> {
+                    secondaryHolder.getView(com.kunminx.linkage.R.id.level_2_item).setOnClickListener(v -> {
                         if (mDialog != null && mDialog.isShowing()) {
                             mDialog.dismiss();
                         }
