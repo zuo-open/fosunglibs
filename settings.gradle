@@ -57,7 +57,7 @@ include ':libocr'
 //include ':zdkplayer:dkplayer'
 //include ':zdkplayer:dkplayer-ui'
 //include ':zdkplayer:dkplayer-videocache'
-//include ':libyanzheng'
+include ':libyanzheng'
 
 //include ':libagentweb20'
 //include ':libmvp'
