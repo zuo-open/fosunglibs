@@ -6,8 +6,8 @@ dependencies {
     implementation librarys.blankj
     implementation librarys.glide47
     implementation librarys.XXPermissions
-    api project(':zdkplayer:dkplayer-java')
-    api project(':zdkplayer:dkplayer-ui')
-    api project(':zdkplayer:dkplayer-players:ijkexo')
-    api project(':zdkplayer:dkplayer-videocache')
+//    api project(':zdkplayer:dkplayer-java')
+//    api project(':zdkplayer:dkplayer-ui')
+//    api project(':zdkplayer:dkplayer-players:ijkexo')
+//    api project(':zdkplayer:dkplayer-videocache')
 }
