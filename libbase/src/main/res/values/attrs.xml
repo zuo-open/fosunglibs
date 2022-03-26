@@ -347,9 +347,179 @@
     </declare-styleable>
 
 
+    <attr name="cpCancelTextSize" format="dimension|reference" />
+    <attr name="cpCancelTextColor" format="color|reference" />
+
+    <attr name="cpClearTextIcon" format="reference" />
+    <attr name="cpSearchTextSize" format="dimension|reference" />
+    <attr name="cpSearchTextColor" format="color|reference" />
+    <attr name="cpSearchHintText" format="string|reference" />
+    <attr name="cpSearchHintTextColor" format="color|reference" />
+    <attr name="cpSearchCursorDrawable" format="reference" />
+
+    <attr name="cpListItemTextSize" format="dimension|reference" />
+    <attr name="cpListItemTextColor" format="color|reference" />
+    <attr name="cpListItemHeight" format="dimension|reference"/>
+
+    <attr name="cpEmptyIcon" format="reference"/>
+    <attr name="cpEmptyIconWidth" format="dimension|reference"/>
+    <attr name="cpEmptyIconHeight" format="dimension|reference"/>
+    <attr name="cpEmptyText" format="string|reference"/>
+    <attr name="cpEmptyTextSize" format="dimension|reference"/>
+    <attr name="cpEmptyTextColor" format="color|reference"/>
+
+    <attr name="cpGridItemBackground" format="color|reference"/>
+    <attr name="cpGridItemSpace" format="reference"/>
+
+    <attr name="cpSectionHeight" format="reference"/>
+    <attr name="cpSectionTextSize" format="reference" />
+    <attr name="cpSectionTextColor" format="reference" />
+    <attr name="cpSectionBackground" format="reference" />
+
+    <attr name="cpIndexBarTextSize" format="reference" />
+    <attr name="cpIndexBarNormalTextColor" format="reference" />
+    <attr name="cpIndexBarSelectedTextColor" format="reference" />
+
+    <attr name="cpOverlayWidth" format="dimension|reference"/>
+    <attr name="cpOverlayHeight" format="dimension|reference"/>
+    <attr name="cpOverlayTextSize" format="dimension|reference"/>
+    <attr name="cpOverlayTextColor" format="color|reference"/>
+    <attr name="cpOverlayBackground" format="color|reference"/>
 
 
+    <string-array name="fragments">
+        <item name="rx_magic">RxMagicSampleFragment</item>
+        <item name="eleme">ElemeSampleFragment</item>
+        <item name="switch">SwitchSampleFragment</item>
+        <item name="custom_header">CustomHeaderSampleFragment</item>
+        <item name="custom_decoration">CustomDecorationSampleFragment</item>
+        <item name="dialog">DialogSampleFragment</item>
+        <item name="bottom_sheet">BottomSheetSampleFragment</item>
+        <item name="much_level1_item">MuchPrimaryItemSampleFragment</item>
+        <item name="less_level1_item">LessPrimaryItemSampleFragment</item>
+    </string-array>
 
+    <string-array name="fragments_full_path">
+        <item name="rx_magic">"com.kunminx.linkagelistview.ui.RxMagicSampleFragment"</item>
+        <item name="eleme">"com.kunminx.linkagelistview.ui.ElemeSampleFragment"</item>
+        <item name="switch">"com.kunminx.linkagelistview.ui.SwitchSampleFragment"</item>
+        <item name="custom_header">"com.kunminx.linkagelistview.ui.CustomHeaderSampleFragment"</item>
+        <item name="custom_decoration">"com.kunminx.linkagelistview.ui.CustomDecorationSampleFragment"</item>
+        <item name="dialog">"com.kunminx.linkagelistview.ui.DialogSampleFragment"</item>
+        <item name="bottom_sheet">"com.kunminx.linkagelistview.ui.BottomSheetSampleFragment"</item>
+        <item name="much_level1_item">"com.kunminx.linkagelistview.ui.MuchPrimaryItemSampleFragment"</item>
+        <item name="less_level1_item">"com.kunminx.linkagelistview.ui.LessPrimaryItemSampleFragment"</item>
+    </string-array>
+
+
+    <declare-styleable name="NCalendar">
+
+        <attr name="solarTextSize" format="dimension" />
+        <attr name="solarTextBold" format="boolean" />
+        <attr name="todayCheckedSolarTextColor" format="color" />
+        <attr name="todayUnCheckedSolarTextColor" format="color" />
+        <attr name="defaultCheckedSolarTextColor" format="color" />
+        <attr name="defaultUnCheckedSolarTextColor" format="color" />
+
+        <attr name="showLunar" format="boolean" />
+        <attr name="todayCheckedLunarTextColor" format="color" />
+        <attr name="todayUnCheckedLunarTextColor" format="color" />
+        <attr name="defaultCheckedLunarTextColor" format="color" />
+        <attr name="defaultUnCheckedLunarTextColor" format="color" />
+        <attr name="lunarTextSize" format="dimension" />
+        <attr name="lunarTextBold" format="boolean" />
+        <attr name="lunarDistance" format="dimension" />
+
+
+        <attr name="pointSize" format="dimension" />
+        <attr name="pointDistance" format="dimension" />
+        <attr name="todayCheckedPoint" format="reference" />
+        <attr name="todayUnCheckedPoint" format="reference" />
+        <attr name="defaultCheckedPoint" format="reference" />
+        <attr name="defaultUnCheckedPoint" format="reference" />
+
+        <attr name="todayCheckedHoliday" format="reference" />
+        <attr name="todayUnCheckedHoliday" format="reference" />
+        <attr name="defaultCheckedHoliday" format="reference" />
+        <attr name="defaultUnCheckedHoliday" format="reference" />
+
+        <attr name="todayCheckedWorkday" format="reference" />
+        <attr name="todayUnCheckedWorkday" format="reference" />
+        <attr name="defaultCheckedWorkday" format="reference" />
+        <attr name="defaultUnCheckedWorkday" format="reference" />
+
+        <attr name="calendarBackground" format="reference" />
+
+
+        <attr name="holidayText" format="string" />
+        <attr name="workdayText" format="string" />
+        <attr name="holidayWorkdayTextBold" format="boolean" />
+        <attr name="holidayWorkdayTextSize" format="dimension" />
+        <attr name="holidayWorkdayDistance" format="dimension" />
+        <attr name="todayCheckedHolidayTextColor" format="color" />
+        <attr name="todayUnCheckedHolidayTextColor" format="color" />
+        <attr name="defaultCheckedHolidayTextColor" format="color" />
+        <attr name="defaultUnCheckedHolidayTextColor" format="color" />
+        <attr name="todayCheckedWorkdayTextColor" format="color" />
+        <attr name="todayUnCheckedWorkdayTextColor" format="color" />
+        <attr name="defaultCheckedWorkdayTextColor" format="color" />
+        <attr name="defaultUnCheckedWorkdayTextColor" format="color" />
+
+
+        <attr name="disabledString" format="string" />
+
+        <attr name="calendarHeight" format="dimension" />
+        <attr name="stretchCalendarHeight" format="dimension" />
+        <attr name="stretchCalendarEnable" format="boolean" />
+        <attr name="animationDuration" format="integer" />
+
+        <attr name="lastNextMothAlphaColor" format="integer" />
+        <attr name="disabledAlphaColor" format="integer" />
+
+
+        <attr name="showHoliday" format="boolean" />
+        <attr name="allMonthSixLine" format="boolean" />
+        <attr name="lastNextMonthClickEnable" format="boolean" />
+        <attr name="disabledColor" format="color" />
+
+        <attr name="defaultCalendar" format="enum">
+            <enum name="week" value="100" />
+            <enum name="month" value="101" />
+        </attr>
+
+        <attr name="pointLocation" format="enum">
+            <enum name="up" value="200" />
+            <enum name="down" value="201" />
+        </attr>
+
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="300" />
+            <enum name="monday" value="301" />
+        </attr>
+
+        <attr name="holidayWorkdayLocation" format="enum">
+            <enum name="top_right" value="400" />
+            <enum name="top_left" value="401" />
+            <enum name="bottom_right" value="402" />
+            <enum name="bottom_left" value="403" />
+        </attr>
+
+        <attr name="stretchTextSize" format="dimension" />
+        <attr name="stretchTextBold" format="boolean" />
+        <attr name="stretchTextDistance" format="dimension" />
+        <attr name="stretchTextColor" format="color" />
+
+
+        <attr name="showNumberBackground" format="boolean" />
+        <attr name="numberBackgroundTextSize" format="dimension" />
+        <attr name="numberBackgroundTextColor" format="color" />
+        <attr name="numberBackgroundAlphaColor" format="integer" />
+
+
+        <attr name="defaultCheckedBackground" format="reference" />
+        <attr name="todayCheckedBackground" format="reference" />
+
+    </declare-styleable>
 
 
 

@@ -51,14 +51,14 @@
         <!--            android:value="2.1" />-->
 
         <activity
-            android:name=".PictureSelectorAct"
+            android:name="com.luck.pictureselector.PictureSelectorAct"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PhotoFragmentActivity"
+            android:name="com.luck.pictureselector.PhotoFragmentActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PictureSelectorSimpleActivity"
+            android:name="com.luck.pictureselector.PictureSelectorSimpleActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

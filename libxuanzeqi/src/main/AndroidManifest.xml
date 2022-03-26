@@ -8,7 +8,7 @@
 <!--        android:label="@string/app_namelibxuanzeqi"-->
 
         <activity
-            android:name=".activity.MainActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.MainActivitylibxuanzeqi"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -17,35 +17,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.SinglePickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.SinglePickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.DateTimePickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.DateTimePickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LinkagePickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.LinkagePickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.AddressPickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.AddressPickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ColorPickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.ColorPickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.FilePickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.FilePickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.CalendarPickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.CalendarPickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ImagePickerActivitylibxuanzeqi"
+            android:name="com.geek.libxuanzeqi.activity.ImagePickerActivitylibxuanzeqi"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
     </application>

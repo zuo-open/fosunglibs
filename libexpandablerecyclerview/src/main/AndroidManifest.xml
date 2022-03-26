@@ -7,7 +7,7 @@
 <!--        android:label="@string/appnamelibexpandablerecyclerview"-->
 
         <activity
-            android:name=".demo.ExpandableAct"
+            android:name="drawthink.expandablerecyclerview.demo.ExpandableAct"
             android:exported="true">
             <intent-filter>
                 <action android:name="${applicationId}.hs.act.phone.expandableview" />
@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".demo.extextview.TextViewAct"
+            android:name="drawthink.expandablerecyclerview.demo.extextview.TextViewAct"
             android:exported="true">
             <intent-filter>
                 <action android:name="${applicationId}.hs.act.phone.TextViewAct" />
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".demo.eximageview.ImageViewAct"
+            android:name="drawthink.expandablerecyclerview.demo.eximageview.ImageViewAct"
             android:exported="true">
             <intent-filter>
                 <action android:name="${applicationId}.hs.act.phone.ImageViewAct" />

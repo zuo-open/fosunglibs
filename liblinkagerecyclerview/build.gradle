@@ -2,9 +2,6 @@ apply from: "${rootDir.path}/gradle/base.gradle"
 apply from: "${rootDir.path}/gradle/publish.gradle"
 def librarys = rootProject.ext.dependencies //依赖
 dependencies {
-    implementation librarys.blankj
-    implementation librarys.glide47
-    implementation 'com.github.getActivity:XXPermissions:11.0'
-    implementation 'com.github.li-xiaojun:XPopup:2.4.9'
-    api 'com.kunminx.linkage:linkage-recyclerview:2.4.0'
+    implementation project(':libutils')
+
 }

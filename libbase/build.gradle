@@ -20,69 +20,6 @@ android {
 }
 dependencies {
     implementation project(':libutils')
-    // retrofit
-    api librarys.retrofit
-    api librarys.retrofitconverters
-    api librarys.retrofitgconvertergson
-    api librarys.retrofitgconverterscalars
-    api librarys.okhttpVersion
-    api librarys.okioVersion
-    api librarys.okhttploggerinter
-    // glide47
-    annotationProcessor librarys.annotationProcessorglide47compiler
-    api 'com.caverock:androidsvg:1.2.1'
-    api librarys.glide47
-    api librarys.glide47AnnProcessor
-    api librarys.glide47okhttp3integration
-    api librarys.photoView
-    api librarys.picasso
-    // agentlib
-    api 'us.feras.mdv:markdownview:1.1.0'
-    api 'com.lcodecorex:tkrefreshlayout:1.0.7'
-    api 'com.github.lzyzsd:jsbridge:1.0.4'
-    api 'com.tencent.sonic:sdk:2.0.0'
-    api 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
-    api 'com.github.Justson:flying-pigeon:v1.0.7'
-    api 'com.github.Justson:dispatch-queue:v1.0.5'
-    api 'com.github.Justson:Downloader:v4.1.9-androidx'
-    api 'com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx'
-    api 'com.github.Justson.AgentWeb:agentweb-filechooser:v4.1.9-androidx'
-    api 'com.tencent.bugly:crashreport:latest.release'
-    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
-    api 'com.tencent.bugly:nativecrashreport:latest.release'
-    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
 
-    // https://github.com/Meituan-Dianping/walle
-    api 'com.meituan.android.walle:library:1.1.7'
-    // viewpager2 轮播图 https://github.com/youth5201314/banner
-    api 'io.github.youth5201314:banner:2.2.2'
-    //
-    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
-    // 注意：分包之后不会有默认的Header和Footer需要手动添加！还是原来的三种方法！
-    api 'com.scwang.smart:refresh-layout-kernel:2.0.3'      //核心必须依赖
-    api 'com.scwang.smart:refresh-header-classics:2.0.3'    //经典刷新头
-    api 'com.scwang.smart:refresh-header-radar:2.0.3'       //雷达刷新头
-    api 'com.scwang.smart:refresh-header-falsify:2.0.3'     //虚拟刷新头
-    api 'com.scwang.smart:refresh-header-material:2.0.3'    //谷歌刷新头
-    api 'com.scwang.smart:refresh-header-two-level:2.0.3'   //二级刷新头
-    api 'com.scwang.smart:refresh-footer-ball:2.0.3'        //球脉冲加载
-    api 'com.scwang.smart:refresh-footer-classics:2.0.3'    //经典加载
-    // https://github.com/vinc3m1/RoundedImageView
-    api 'com.makeramen:roundedimageview:2.3.0'
-    // https://github.com/googlesamples/easypermissions
-    api 'pub.devrel:easypermissions:3.0.0'
-    // https://github.com/SalomonBrys/ANR-WatchDog
-    api 'com.github.anrwatchdog:anrwatchdog:1.4.0'
-//    api project(':libutils')
-//    api project(':libagentweb20')
-//    api project(':libmvp')
-//    api project(':libretrofit')
-//    api project(':libswipebacklayout')
-//    api project(':libwebview')
-//    api project(':libglide47')
-//    api project(':librararyforfileprovdider')
-//    api project(':liblanguage')
-//    api project(':libtablayout')
-//    api project(':libopendroid')
 
 }

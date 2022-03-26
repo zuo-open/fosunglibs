@@ -10,7 +10,7 @@
 <!--        android:label="@string/app_nameliblinkagerecyclerview"-->
 
         <activity
-            android:name=".ElmAct"
+            android:name="com.kunminx.linkagelistview.ElmAct"
             android:exported="true">
             <intent-filter>
                 <action android:name="${applicationId}.hs.act.slbapp.ElmAct" />

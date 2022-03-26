@@ -35,6 +35,7 @@
     <item type="id" name="web_statusbarutil_translucent_view" />
 
 
-
+    <item name="N_monthCalendar" type="id" />
+    <item name="N_weekCalendar" type="id" />
 
 </resources>

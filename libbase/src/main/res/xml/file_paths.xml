@@ -29,4 +29,8 @@
     <!--<external-path-->
         <!--name="beta_external_files_path"-->
         <!--path="Android/data/" />-->
+<!--    &lt;!&ndash; /storage/emulated/0/Download/${applicationId}/.beta/apk&ndash;&gt;-->
+<!--    <external-path name="beta_external_path" path="Download/"/>-->
+<!--    &lt;!&ndash;/storage/emulated/0/Android/data/${applicationId}/files/apk/&ndash;&gt;-->
+<!--    <external-path name="beta_external_files_path" path="Android/data/"/>-->
 </paths>

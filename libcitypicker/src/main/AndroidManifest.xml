@@ -7,7 +7,7 @@
 <!--        android:label="@string/app_namelibcitypicker"-->
 
         <activity
-            android:name=".activity.CityPickerAct"
+            android:name="com.zaaach.citypicker.activity.CityPickerAct"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/DefaultCityPickerTheme">
@@ -15,43 +15,9 @@
                 <action android:name="${applicationId}.hs.act.slbapp.CityPickerAct" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="cs.znclass.com"
-                    android:path="/${applicationId}.hs.act.slbapp.CityPickerAct"
-                    android:scheme="dataability" />
-            </intent-filter>
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="cs.znclass.com"
-                    android:path="/${applicationId}.hs.act.slbapp.CityPickerAct"
-                    android:scheme="http" />
-            </intent-filter>
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="cs.znclass.com"
-                    android:path="/${applicationId}.hs.act.slbapp.CityPickerAct"
-                    android:scheme="https" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".activity.DemoAct1"
+            android:name="com.zaaach.citypicker.activity.DemoAct1"
             android:theme="@style/DefaultCityPickerTheme" />
     </application>
 

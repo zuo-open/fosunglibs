@@ -36,7 +36,7 @@
         <!--            android:name="com.amap.api.v2.apikey"-->
         <!--            android:value="5a17ab9cc5aa0d74e090c37f3ecd5a15" />-->
         <activity
-            android:name=".LocActivity"
+            android:name="com.geek.liblocations.LocActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="${applicationId}.hs.act.slbapp.LocActivity" />
