@@ -4,20 +4,14 @@ pluginManagement {
         google()
 //        mavenLocal()
         mavenCentral()
-        maven {
-            allowInsecureProtocol = true
-            url 'https://jitpack.io'
-        }
-//        maven { url 'https://maven.aliyun.com/repository/jcenter' }
-//        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven {
-            allowInsecureProtocol = true
-            url 'https://maven.aliyun.com/repository/public'
-        }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
         maven {
             allowInsecureProtocol = true
             url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
         }
+        maven { url 'https://maven.aliyun.com/repository/public' }
     }
 }
 dependencyResolutionManagement {
@@ -26,20 +20,15 @@ dependencyResolutionManagement {
         google()
 //        mavenLocal()
         mavenCentral()
-        maven {
-            allowInsecureProtocol = true
-            url 'https://jitpack.io'
-        }
-//        maven { url 'https://maven.aliyun.com/repository/jcenter' }
-//        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven {
-            allowInsecureProtocol = true
-            url 'https://maven.aliyun.com/repository/public'
-        }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
         maven {
             allowInsecureProtocol = true
             url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
         }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+
     }
 }
 rootProject.name = "fosunglibs"
@@ -62,11 +51,11 @@ include ':libsCenterNew',
 include ':libotherlibs'
 include ':libbase'
 include ':libutils'
-include ':zdkplayer:dkplayer-java'
-include ':zdkplayer:dkplayer-players:ijkexo'
-include ':zdkplayer:dkplayer'
-include ':zdkplayer:dkplayer-ui'
-include ':zdkplayer:dkplayer-videocache'
+//include ':zdkplayer:dkplayer-java'
+//include ':zdkplayer:dkplayer-players:ijkexo'
+//include ':zdkplayer:dkplayer'
+//include ':zdkplayer:dkplayer-ui'
+//include ':zdkplayer:dkplayer-videocache'
 //include ':libyanzheng'
 
 //include ':libocr'
