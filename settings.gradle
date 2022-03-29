@@ -47,12 +47,12 @@ include ':libsCenterNew',
 
 // commonlibs
 include ':libgeek'
-//include ':libotherlibs'
-//include ':libbase'
+include ':libotherlibs'
+include ':libbase'
 include ':libutils'
-//include ':libocr'
-//include ':libyanzheng'
-//include ':libdkplayer'
+include ':libocr'
+include ':libyanzheng'
+include ':libdkplayer'
 
 //include ':zdkplayer:dkplayer'
 //include ':zdkplayer:dkplayer-java'

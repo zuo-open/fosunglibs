@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.blankj.utilcode.util.ToastUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.haier.cellarette.baselibrary.R;
+import com.haier.cellarette.baselibrary.materialspinner.MaterialSpinner;
 import com.haier.cellarette.baselibrary.switchbutton.SwitchButtonK;
-import com.jaredrummler.materialspinner.MaterialSpinner;
 
 import java.util.ArrayList;
 import java.util.List;

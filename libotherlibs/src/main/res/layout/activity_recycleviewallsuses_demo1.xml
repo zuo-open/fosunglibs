@@ -16,7 +16,7 @@
         android:paddingRight="@dimen/dp_10">
 
 
-        <com.jaredrummler.materialspinner.MaterialSpinner
+        <com.haier.cellarette.baselibrary.materialspinner.MaterialSpinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

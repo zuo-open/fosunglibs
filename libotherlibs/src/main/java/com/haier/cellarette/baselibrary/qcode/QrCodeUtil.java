@@ -9,13 +9,13 @@ import android.webkit.WebView;
 import android.widget.ImageView;
 
 import com.blankj.utilcode.util.ToastUtils;
-import com.bolex.pressscan.ScanTools;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import com.haier.cellarette.baselibrary.pressscancode.ScanTools;
 
 import java.util.Hashtable;
 

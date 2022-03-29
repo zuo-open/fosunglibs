@@ -19,7 +19,7 @@
         app:cardUseCompatPadding="true"
         tools:targetApi="lollipop">
 
-        <com.makeramen.roundedimageview.RoundedImageView
+        <com.geek.libbase.recycleviewcard2.roundview.RoundedImageView
             android:id="@+id/cover"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

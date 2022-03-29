@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <declare-styleable name="EmptyView">
         <attr name="loading_layout_img_an" format="integer|reference" />
         <attr name="loading_layout" format="reference" />
@@ -395,6 +395,40 @@
         <attr name="sizeRatio" format="float" />
         <attr name="scaleStep" format="float" />
         <attr name="displayCount" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MaterialSpinner" tools:ignore="ResourceName">
+        <attr name="ms_arrow_tint" format="color" />
+        <attr name="ms_hide_arrow" format="boolean" />
+        <attr name="ms_background_color" format="color" />
+        <attr name="ms_text_color" format="color" />
+        <attr name="ms_dropdown_max_height" format="dimension" />
+        <attr name="ms_dropdown_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="ms_background_selector" format="integer" />
+        <attr name="ms_padding_top" format="dimension" />
+        <attr name="ms_padding_left" format="dimension" />
+        <attr name="ms_padding_bottom" format="dimension" />
+        <attr name="ms_padding_right" format="dimension" />
+        <attr name="ms_popup_padding_top" format="dimension" />
+        <attr name="ms_popup_padding_left" format="dimension" />
+        <attr name="ms_popup_padding_bottom" format="dimension" />
+        <attr name="ms_popup_padding_right" format="dimension" />
+        <attr name="ms_hint" format="string" />
+        <attr name="ms_hint_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ContentWithSpaceEditText">
+        <attr name="input_type" format="enum">
+            <enum name="phone" value="0"/>
+            <enum name="bank_card_no" value="1"/>
+            <enum name="identify_card_no" value="2"/>
+        </attr>
     </declare-styleable>
 
 </resources>

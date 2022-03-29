@@ -9,7 +9,6 @@ import android.graphics.Rect;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
@@ -20,14 +19,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
-import com.bumptech.glide.Glide;
 import com.geek.libocr.base.Callback;
 import com.geek.libocr.base.IViewFinder;
 import com.geek.libocr.base.Result;
 import com.geek.libocr.base.ScannerView;
-import com.google.gson.Gson;
-
-import cc.shinichi.library.tool.image.DownloadPictureUtil;
 
 public class ScannerAct2 extends AppCompatActivity {
 

@@ -42,7 +42,7 @@
     <application
         android:allowBackup="true"
         android:supportsRtl="true">
-<!--        android:label="@string/baselibraryappname"-->
+        <!--        android:label="@string/baselibraryappname"-->
 
         <provider
             android:name="com.haier.cellarette.baselibrary.provider.BaselibFileProvider"
@@ -726,5 +726,17 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".yanzheng.IdCardAct1"
+            android:exported="true" />
+        <activity
+            android:name=".materialspinner.SpinnerAct1"
+            android:exported="true" />
+        <activity
+            android:name=".pressscancode.ScanSimpleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".anrwatchdog.AnrAct1"
+            android:exported="true" />
     </application>
 </manifest>

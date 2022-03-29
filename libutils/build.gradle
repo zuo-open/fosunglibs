@@ -37,107 +37,101 @@ dependencies {
     api librarys.okhttpVersion
     api librarys.okioVersion
     api librarys.okhttploggerinter
+    // agentlib
+    api 'us.feras.mdv:markdownview:1.1.0'
+    api 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    api 'com.github.lzyzsd:jsbridge:1.0.4'
+    api 'com.tencent.sonic:sdk:2.0.0'
+    api 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
+    api 'com.github.Justson:flying-pigeon:v1.0.7'
+    api 'com.github.Justson:dispatch-queue:v1.0.5'
+    api 'com.github.Justson:Downloader:v4.1.9-androidx'
+    api 'com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx'
+    api 'com.github.Justson.AgentWeb:agentweb-filechooser:v4.1.9-androidx'
     //
-    api librarys.rxJava2
-    api librarys.rxandroid2
-    api librarys.adapterrxjava2
-//    // agentlib
-//    api 'us.feras.mdv:markdownview:1.1.0'
-//    api 'com.lcodecorex:tkrefreshlayout:1.0.7'
-//    api 'com.github.lzyzsd:jsbridge:1.0.4'
-//    api 'com.tencent.sonic:sdk:2.0.0'
-//    api 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
-//    api 'com.github.Justson:flying-pigeon:v1.0.7'
-//    api 'com.github.Justson:dispatch-queue:v1.0.5'
-//    api 'com.github.Justson:Downloader:v4.1.9-androidx'
-//    api 'com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx'
-//    api 'com.github.Justson.AgentWeb:agentweb-filechooser:v4.1.9-androidx'
-//    //
-//    api 'com.caverock:androidsvg:1.2.1'
-//    //
-//    api 'com.tencent.bugly:crashreport:latest.release'
-//    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
-//    api 'com.tencent.bugly:nativecrashreport:latest.release'
-//    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
-//    // https://github.com/Meituan-Dianping/walle
-//    api 'com.meituan.android.walle:library:1.1.7'
-//    // viewpager2 轮播图 https://github.com/youth5201314/banner
-//    api 'io.github.youth5201314:banner:2.2.2'
-//    //
-//    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
-//    // 注意：分包之后不会有默认的Header和Footer需要手动添加！还是原来的三种方法！
-//    api 'com.scwang.smart:refresh-layout-kernel:2.0.3'      //核心必须依赖
-//    api 'com.scwang.smart:refresh-header-classics:2.0.3'    //经典刷新头
-//    api 'com.scwang.smart:refresh-header-radar:2.0.3'       //雷达刷新头
-//    api 'com.scwang.smart:refresh-header-falsify:2.0.3'     //虚拟刷新头
-//    api 'com.scwang.smart:refresh-header-material:2.0.3'    //谷歌刷新头
-//    api 'com.scwang.smart:refresh-header-two-level:2.0.3'   //二级刷新头
-//    api 'com.scwang.smart:refresh-footer-ball:2.0.3'        //球脉冲加载
-//    api 'com.scwang.smart:refresh-footer-classics:2.0.3'    //经典加载
-//    // https://github.com/vinc3m1/RoundedImageView
-//    api 'com.makeramen:roundedimageview:2.3.0'
-//    // https://github.com/googlesamples/easypermissions
-////    api 'pub.devrel:easypermissions:3.0.0'
-//    // https://github.com/SalomonBrys/ANR-WatchDog
+    api 'com.caverock:androidsvg:1.2.1'
+    //
+    api 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    api 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    // https://github.com/Meituan-Dianping/walle
+    api 'com.meituan.android.walle:library:1.1.7'
+    // viewpager2 轮播图 https://github.com/youth5201314/banner
+    api 'io.github.youth5201314:banner:2.2.2'
+    //
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    // 注意：分包之后不会有默认的Header和Footer需要手动添加！还是原来的三种方法！
+    api 'com.scwang.smart:refresh-layout-kernel:2.0.3'      //核心必须依赖
+    api 'com.scwang.smart:refresh-header-classics:2.0.3'    //经典刷新头
+    api 'com.scwang.smart:refresh-header-radar:2.0.3'       //雷达刷新头
+    api 'com.scwang.smart:refresh-header-falsify:2.0.3'     //虚拟刷新头
+    api 'com.scwang.smart:refresh-header-material:2.0.3'    //谷歌刷新头
+    api 'com.scwang.smart:refresh-header-two-level:2.0.3'   //二级刷新头
+    api 'com.scwang.smart:refresh-footer-ball:2.0.3'        //球脉冲加载
+    api 'com.scwang.smart:refresh-footer-classics:2.0.3'    //经典加载
+    // https://github.com/vinc3m1/RoundedImageView
+//    api 'com.makeramen:roundedimageview:2.3.0'   com.geek.libbase.recycleviewcard2.roundview.RoundedImageView
+    // https://github.com/googlesamples/easypermissions
+//    api 'pub.devrel:easypermissions:3.0.0'
+    // https://github.com/SalomonBrys/ANR-WatchDog   AnrAct1
 //    api 'com.github.anrwatchdog:anrwatchdog:1.4.0'
-//    //
-//    api 'com.kunminx.linkage:linkage-recyclerview:2.4.0'
-//    //
-//    api 'joda-time:joda-time:2.10.2'
-//    //
-//    api 'androidx.camera:camera-core:1.0.2'
-//    api 'androidx.camera:camera-camera2:1.0.2'
-//    api 'io.github.lucksiege:pictureselector:v2.7.3-rc08'
-//    //
-//    api 'org.tensorflow:tensorflow-lite:1.14.0'
-//    // https://github.com/getActivity/ToastUtils 横屏Toast
-//    api 'com.github.getActivity:ToastUtils:9.2'
-//    // https://github.com/getActivity/XXPermissions
-//    api 'com.github.getActivity:XXPermissions:11.0'
-//    // 标题栏框架：https://github.com/getActivity/TitleBar
-//    api 'com.github.getActivity:TitleBar:8.6'
-//    // https://github.com/CymChad/BaseRecyclerViewAdapterHelper
-//    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
-//    // https://github.com/airbnb/lottie-android
-//    api 'com.airbnb.android:lottie:4.1.0'
-//    // https://github.com/drakeet/MultiType
-//    api 'me.drakeet.multitype:multitype:3.4.4'
-//    // https://github.com/jaredrummler/MaterialSpinner
+    // https://github.com/KunMinX/Linkage-RecyclerView
+    api 'com.kunminx.linkage:linkage-recyclerview:2.4.0'
+    // https://github.com/JodaOrg/joda-time
+    api 'joda-time:joda-time:2.10.2'
+    // https://github.com/LuckSiege/PictureSelector
+    api 'androidx.camera:camera-core:1.0.2'
+    api 'androidx.camera:camera-camera2:1.0.2'
+    api 'io.github.lucksiege:pictureselector:v2.7.3-rc08'
+    // https://github.com/getActivity/ToastUtils 横屏Toast
+    api 'com.github.getActivity:ToastUtils:9.2'
+    // https://github.com/getActivity/XXPermissions
+    api 'com.github.getActivity:XXPermissions:11.0'
+    // 标题栏框架：https://github.com/getActivity/TitleBar
+    api 'com.github.getActivity:TitleBar:8.6'
+    // https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    // https://github.com/airbnb/lottie-android
+    api 'com.airbnb.android:lottie:4.1.0'
+    // https://github.com/drakeet/MultiType
+    api 'me.drakeet.multitype:multitype:3.4.4'
+    // https://github.com/jaredrummler/MaterialSpinner   SpinnerAct1
 //    api 'com.jaredrummler:material-spinner:1.2.5'
-//    // https://github.com/BolexLiu/PressScanCode
+    // https://github.com/BolexLiu/PressScanCode   ScanSimpleActivity
 //    api 'com.github.BolexLiu:PressScanCode:v1.0.0'
-//    // https://github.com/yshrsmz/KeyboardVisibilityEvent
-//    api 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.3.0'
-//    // https://github.com/meetsl/SCardView-master
-//    api 'io.github.meetsl:SCardView:1.2'
-//    // https://github.com/nanchen2251/BankCardUtils
+    // https://github.com/yshrsmz/KeyboardVisibilityEvent
+    api 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.3.0'
+    // https://github.com/meetsl/SCardView-master
+    api 'io.github.meetsl:SCardView:1.2'
+    // https://github.com/nanchen2251/BankCardUtils IdCardAct1
 //    api 'com.github.nanchen2251:BankCardUtils:1.0.2'
-////    // https://github.com/SherlockGougou/BigImageViewPager
-//    api 'com.github.SherlockGougou:BigImageViewPager:androidx-6.2.1'
-//    // https://github.com/MZCretin/ExpandableTextView
-//    api 'com.github.MZCretin:ExpandableTextView:v1.6.1-x'
-//    // https://github.com/princekin-f/EasyFloat
-//    api 'com.github.princekin-f:EasyFloat:2.0.3'
-//    //  https://github.com/li-xiaojun/XPopup
-//    api 'com.github.li-xiaojun:XPopup:2.4.9'
-//    api 'com.github.li-xiaojun:StateLayout:1.3.2'
-//    api 'com.github.li-xiaojun:EasyAdapter:1.2.7'
-//    //
-//    api 'com.orhanobut:logger:2.2.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:Common:3.1.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:WheelView:3.1.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:WheelPicker:3.1.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:AddressPicker:3.1.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:ColorPicker:3.1.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:FilePicker:3.1.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:CalendarPicker:3.1.0'
-//    api 'com.gitee.li_yu_jiang.AndroidPicker:ImagePicker:3.1.0'
-//    //3D地图so及jar
-//    api 'com.amap.api:3dmap:latest.integration'
-//    //定位功能
-//    api 'com.amap.api:location:latest.integration'
-//    //搜索功能
-//    api 'com.amap.api:search:latest.integration'
+//    // https://github.com/SherlockGougou/BigImageViewPager
+    api 'com.github.SherlockGougou:BigImageViewPager:androidx-6.2.1'
+    // https://github.com/MZCretin/ExpandableTextView
+    api 'com.github.MZCretin:ExpandableTextView:v1.6.1-x'
+    // https://github.com/princekin-f/EasyFloat
+    api 'com.github.princekin-f:EasyFloat:2.0.3'
+    //  https://github.com/li-xiaojun/XPopup
+    api 'com.github.li-xiaojun:XPopup:2.4.9'
+    api 'com.github.li-xiaojun:StateLayout:1.3.2'
+    api 'com.github.li-xiaojun:EasyAdapter:1.2.7'
+    //
+    api 'com.orhanobut:logger:2.2.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:Common:3.1.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:WheelView:3.1.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:WheelPicker:3.1.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:AddressPicker:3.1.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:ColorPicker:3.1.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:FilePicker:3.1.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:CalendarPicker:3.1.0'
+    api 'com.gitee.li_yu_jiang.AndroidPicker:ImagePicker:3.1.0'
+    //3D地图so及jar
+    api 'com.amap.api:3dmap:latest.integration'
+    //定位功能
+    api 'com.amap.api:location:latest.integration'
+    //搜索功能
+    api 'com.amap.api:search:latest.integration'
 
 //    implementation "androidx.legacy:legacy-support-v4:1.0.0"
 //    implementation "androidx.appcompat:appcompat:1.3.1"

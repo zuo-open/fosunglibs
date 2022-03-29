@@ -402,6 +402,21 @@ public class ScanAct2 extends AppCompatActivity {
 
     }
 
+    public void onClickBtn4(View v) {
+//        Intent intent = new Intent(this, ScannerAct2.class);
+//        startActivity(intent);
+    }
+
+    public void onClickBtn5(View v) {
+//        Intent intent = new Intent(this, ScannerAct2.class);
+//        startActivity(intent);
+    }
+
+    public void onClickBtn6(View v) {
+//        Intent intent = new Intent(this, ScannerAct2.class);
+//        startActivity(intent);
+    }
+
     /**
      * 黄图识别，建议在子线程运行
      *
