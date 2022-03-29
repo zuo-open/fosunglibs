@@ -46,13 +46,14 @@ include ':libsCenterNew',
 // end aar
 
 // commonlibs
-//include ':libgeek'
-include ':libotherlibs'
-include ':libbase'
+include ':libgeek'
+//include ':libotherlibs'
+//include ':libbase'
 include ':libutils'
-include ':libocr'
-include ':libyanzheng'
-include ':libdkplayer'
+//include ':libocr'
+//include ':libyanzheng'
+//include ':libdkplayer'
+
 //include ':zdkplayer:dkplayer'
 //include ':zdkplayer:dkplayer-java'
 //include ':zdkplayer:dkplayer-players:ijkexo'
