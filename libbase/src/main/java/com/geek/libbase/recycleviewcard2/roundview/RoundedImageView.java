@@ -105,16 +105,16 @@ public class RoundedImageView extends ImageView {
     }
 
     float cornerRadiusOverride =
-        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_riv_corner_radius, -1);
+        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_stack_riv_corner_radius, -1);
 
     mCornerRadii[Corner.TOP_LEFT] =
-        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_riv_corner_radius_top_left, -1);
+        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_stack_riv_corner_radius_top_left, -1);
     mCornerRadii[Corner.TOP_RIGHT] =
-        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_riv_corner_radius_top_right, -1);
+        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_stack_riv_corner_radius_top_right, -1);
     mCornerRadii[Corner.BOTTOM_RIGHT] =
-        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_riv_corner_radius_bottom_right, -1);
+        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_stack_riv_corner_radius_bottom_right, -1);
     mCornerRadii[Corner.BOTTOM_LEFT] =
-        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_riv_corner_radius_bottom_left, -1);
+        a.getDimensionPixelSize(R.styleable.StackRoundedImageView_stack_riv_corner_radius_bottom_left, -1);
 
     boolean any = false;
     for (int i = 0, len = mCornerRadii.length; i < len; i++) {
@@ -134,33 +134,33 @@ public class RoundedImageView extends ImageView {
       }
     }
 
-    mBorderWidth = a.getDimensionPixelSize(R.styleable.StackRoundedImageView_riv_border_width, -1);
+    mBorderWidth = a.getDimensionPixelSize(R.styleable.StackRoundedImageView_stack_riv_border_width, -1);
     if (mBorderWidth < 0) {
       mBorderWidth = DEFAULT_BORDER_WIDTH;
     }
 
-    mBorderColor = a.getColorStateList(R.styleable.StackRoundedImageView_riv_border_color);
+    mBorderColor = a.getColorStateList(R.styleable.StackRoundedImageView_stack_riv_border_color);
     if (mBorderColor == null) {
       mBorderColor = ColorStateList.valueOf(RoundedDrawable.DEFAULT_BORDER_COLOR);
     }
 
-    mMutateBackground = a.getBoolean(R.styleable.StackRoundedImageView_riv_mutate_background, false);
-    mIsOval = a.getBoolean(R.styleable.StackRoundedImageView_riv_oval, false);
+    mMutateBackground = a.getBoolean(R.styleable.StackRoundedImageView_stack_riv_mutate_background, false);
+    mIsOval = a.getBoolean(R.styleable.StackRoundedImageView_stack_riv_oval, false);
 
-    final int tileMode = a.getInt(R.styleable.StackRoundedImageView_riv_tile_mode, TILE_MODE_UNDEFINED);
+    final int tileMode = a.getInt(R.styleable.StackRoundedImageView_stack_riv_tile_mode, TILE_MODE_UNDEFINED);
     if (tileMode != TILE_MODE_UNDEFINED) {
       setTileModeX(parseTileMode(tileMode));
       setTileModeY(parseTileMode(tileMode));
     }
 
     final int tileModeX =
-        a.getInt(R.styleable.StackRoundedImageView_riv_tile_mode_x, TILE_MODE_UNDEFINED);
+        a.getInt(R.styleable.StackRoundedImageView_stack_riv_tile_mode_x, TILE_MODE_UNDEFINED);
     if (tileModeX != TILE_MODE_UNDEFINED) {
       setTileModeX(parseTileMode(tileModeX));
     }
 
     final int tileModeY =
-        a.getInt(R.styleable.StackRoundedImageView_riv_tile_mode_y, TILE_MODE_UNDEFINED);
+        a.getInt(R.styleable.StackRoundedImageView_stack_riv_tile_mode_y, TILE_MODE_UNDEFINED);
     if (tileModeY != TILE_MODE_UNDEFINED) {
       setTileModeY(parseTileMode(tileModeY));
     }
