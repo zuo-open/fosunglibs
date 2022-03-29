@@ -60,6 +60,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation files('libs/jar_4_2_7.jar')
+//    implementation 'com.shouzhong:ScannerTextLib:1.0.0'
+//    implementation 'com.shouzhong:ScannerNsfwLib:1.0.0'
+//    implementation project(':libutils')
 //    implementation project(':libbase')
 //    implementation project(':libdkplayer')
 //    implementation project(':libocr')
@@ -68,7 +71,7 @@ dependencies {
 //    implementation 'com.github.geeklx.fosunglibs:libbase:1.2.5'
 //    implementation 'com.github.geeklx.fosunglibs:libdkplayer:1.2.5'
 //    implementation 'com.github.geeklx.fosunglibs:libyanzheng:1.2.5'
-//    implementation 'com.github.geeklx.fosunglibs:libutils:1.2.5'
+    implementation 'com.github.geeklx.fosunglibs:libutils:1.2.5'
 //    implementation 'com.github.geeklx.fosunglibs:libotherlibs:1.2.5'
 //    implementation 'com.github.geeklx.fosunglibs:libocr:1.2.5'
     //

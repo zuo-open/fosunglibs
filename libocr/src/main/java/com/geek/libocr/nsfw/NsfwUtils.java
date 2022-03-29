@@ -43,7 +43,9 @@ public class NsfwUtils {
      * @return
      */
     public static float decode(Interpreter tflite, Bitmap bitmap) {
-        if (tflite == null || bitmap == null) return 0.0f;
+        if (tflite == null || bitmap == null) {
+            return 0.0f;
+        }
         try {
             Bitmap temp = Bitmap.createScaledBitmap(squareBitmap(bitmap), 224, 224, true);
             ByteBuffer buf = convertBitmapToByteBuffer(temp);

@@ -58,23 +58,23 @@ public class ScannerAct2 extends AppCompatActivity {
             @Override
             public void result(Result result) {
                 tvResult.setText("识别结果：\n" + result.data);
-                Gson gson = new Gson();
-                cardIDBean = gson.fromJson(result.data, CardIDBean.class);
-                cardIDBean.setData(result.data);
-                cardIDBean.setUrl(result.path);
-                Log.e("aaaaaa", "result: " + cardIDBean.getCardNumber());
-                Log.e("aaaaaa", "result: " + cardIDBean.getName());
-                Log.e("aaaaaa", "result: " + cardIDBean.getNation());
-                Log.e("aaaaaa", "result: " + cardIDBean.getSex());
-                Log.e("aaaaaa", "result: " + cardIDBean.getBirth());
-                Log.e("aaaaaa", "result: " + cardIDBean.getAddress());
-                Log.e("aaaaaa", "result: " + cardIDBean.getData());
-                Log.e("aaaaaa", "result: " + cardIDBean.getUrl());
+//                Gson gson = new Gson();
+//                cardIDBean = gson.fromJson(result.data, CardIDBean.class);
+//                cardIDBean.setData(result.data);
+//                cardIDBean.setUrl(result.path);
+//                Log.e("aaaaaa", "result: " + cardIDBean.getCardNumber());
+//                Log.e("aaaaaa", "result: " + cardIDBean.getName());
+//                Log.e("aaaaaa", "result: " + cardIDBean.getNation());
+//                Log.e("aaaaaa", "result: " + cardIDBean.getSex());
+//                Log.e("aaaaaa", "result: " + cardIDBean.getBirth());
+//                Log.e("aaaaaa", "result: " + cardIDBean.getAddress());
+//                Log.e("aaaaaa", "result: " + cardIDBean.getData());
+//                Log.e("aaaaaa", "result: " + cardIDBean.getUrl());
                 startVibrator();
-                cardIDBean.setData(result.data);
-                cardIDBean.setUrl(result.path);
-                DownloadPictureUtil.downloadPicture(getApplicationContext(), result.path);
-                Glide.with(ScannerAct2.this).load(result.path).into(imageview);
+//                cardIDBean.setData(result.data);
+//                cardIDBean.setUrl(result.path);
+//                DownloadPictureUtil.downloadPicture(getApplicationContext(), result.path);
+//                Glide.with(ScannerAct2.this).load(result.path).into(imageview);
 //                imageview.loadImage(result.path, com.luck.pictureselector.R.drawable.ic_add_image);
                 scannerView.restartPreviewAfterDelay(2000);
             }
