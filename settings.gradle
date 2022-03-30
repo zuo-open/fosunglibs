@@ -51,7 +51,7 @@ include ':libotherlibs'
 include ':libbase'
 include ':libutils'
 include ':libocr'
-include ':libyanzheng'
+//include ':libyanzheng'
 include ':libdkplayer'
 
 //include ':zdkplayer:dkplayer'
